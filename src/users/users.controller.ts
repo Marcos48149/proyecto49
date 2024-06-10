@@ -21,6 +21,7 @@ export class UsersController {
     @UseGuards(AuthGuard, RolesGuard)
     async getUser(@Query('page') page: number, @Query('limit') limit: number) {
         if (!page || !limit) { return this.serviceUser.getUser(1, 5) }
+        console.log('name')
         return await this.serviceUser.getUser(Number(page), Number(limit));
 
 
