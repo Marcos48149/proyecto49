@@ -24,4 +24,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/proyecto-Nest:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/proyecto-nest:latest
