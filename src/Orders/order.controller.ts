@@ -19,6 +19,7 @@ export class OrderController {
     @Get(':id')
     @UseGuards(AuthGuard)
     async getOrder(@Param('id',ParseUUIDPipe) id: string) {
+        console.log(id)
         return this.orderservice.getOrder(id)
     }
 
